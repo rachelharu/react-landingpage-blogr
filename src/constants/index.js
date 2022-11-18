@@ -1,5 +1,6 @@
 export const navlinks = [
     {
+        id: 'product',
         title: 'Product',
         links: [
             {
@@ -19,7 +20,8 @@ export const navlinks = [
             },
         ],
     },
-    {
+    {   
+        id: 'company',
         title: 'Company',
         links: [
             {
@@ -37,6 +39,7 @@ export const navlinks = [
         ],
     },
     {
+        id: 'connect',
         title: 'Connect',
         links: [
             {
