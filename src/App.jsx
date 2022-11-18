@@ -4,7 +4,7 @@ import { Navbar, CTA, BodyTop, BodyBottom, BodyMiddle, Footer } from './componen
 const App = () => (
   <div className='bg-cta-gradient w-full overflow-hidden'>
     <div className={`flex-col ${styles.paddingX} ${styles.flexCenter}`}>
-      <div className={`${styles.boxWidth}`}>
+      <div className={`mt-5 ${styles.boxWidth}`}>
         <Navbar />
       </div>
       <div className={`${styles.boxWidth}`}> 

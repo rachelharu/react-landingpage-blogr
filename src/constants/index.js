@@ -1,7 +1,10 @@
-export const navlinks = [
+import { iconArrowLight } from "../assets"
+
+export const navLinks = [
     {
         id: 'product',
         title: 'Product',
+        img: iconArrowLight,
         links: [
             {
                 name: 'Overview'
@@ -23,6 +26,7 @@ export const navlinks = [
     {   
         id: 'company',
         title: 'Company',
+        img: iconArrowLight,
         links: [
             {
                 name: 'About'
@@ -41,6 +45,7 @@ export const navlinks = [
     {
         id: 'connect',
         title: 'Connect',
+        img: iconArrowLight,
         links: [
             {
                 name: 'Contact'
