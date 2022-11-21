@@ -8,9 +8,35 @@ import {
 } from '../assets';
 import { navLinks } from '../constants';
 
+
+// const ImageChange = () =>{
+//   const [selected, setSelected] = useState(iconArrowLight)
+
+//  return(
+//          <img className='ml-2 mt-1 cursor-pointer float-right w-[9px] h-[6px]'
+//          onClick={() => setSelected({ rotate: true })}
+//          src={selected} />
+//  )
+// };
+
+// const ImageChange = () => {
+//   const [isActive, setIsActive] = useState(false);
+  
+//   const handleClick = event => {
+//     setIsActive(current => !current);
+//   };
+
+//   return (
+//     <img className={`${isActive ? 'rotate' : ''} ml-2 mt-1 cursor-pointer float-right w-[9px] h-[6px]`}
+//     onClick={handleClick}
+//     src={iconArrowLight} />
+//   )
+// }
+
 const Navbar = () => {
   const [openId, setOpenId] = useState(undefined);
 
+  
   return (
     <nav className='w-full flex py-6 ml-10 justify-between items-center navbar'>
       <img src={logo} alt='blogr' className='w-[75px] h-[30px]' />
@@ -30,11 +56,9 @@ const Navbar = () => {
               onClick={() => setOpenId((prev) => (prev === nav.id ? undefined : nav.id))}
               href={`#${nav.id}`}>
               {nav.title}
-              <img
-                className='ml-2 mt-1 cursor-pointer float-right w-[9px] h-[6px]'
-                src={iconArrowLight}
-                onClick= {() => setSelected(iconArrowDark)}
-              />
+              {/* <ImageChange /> */}
+              <img className={`${openId === nav.id ? 'rotate-180' : ''} ml-2 mt-1 cursor-pointer float-right w-[9px] h-[6px]`}
+              src={iconArrowLight} />
             </a>
 
             <div className={`${openId !== nav.id ? "hidden" : "relative"} mr-10`}>
