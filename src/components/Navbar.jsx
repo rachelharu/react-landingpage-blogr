@@ -12,7 +12,7 @@ const Navbar = () => {
   const [openId, setOpenId] = useState(undefined);
 
   return (
-    <nav className='w-full flex py-6 ml-10 justify-between items-center navbar'>
+    <nav className='w-full flex py-6 ml-5 justify-between items-center navbar'>
 
         {/* logo and dropdown menus */}
       <img src={logo} alt='blogr' className='w-[75px] h-[30px]' />
@@ -71,10 +71,11 @@ const Navbar = () => {
           className='w-[28px] h-[28px] object-contain'
           onClick={() => setOpenId((prev) => !prev)}/>
 
+        {/* hamburger items list */}
         <div className={`${ openId ? 'flex' : 'hidden'} 
         p-6 absolute top-20 right-0 
-        mx-4 my-2 min-w-[140px]`}>
-         <ul className='list-none flex flex-col justify-end items-center flex-1'>
+        mx-4 my-2 min-w-[140px] w-[90%] bg-white rounded`}>
+         <ul className='list-none flex flex-col items-center flex-1'>
             {navLinks.map((nav, index) => (
               <li
                 key={nav.id}
@@ -82,7 +83,7 @@ const Navbar = () => {
                 font-normal
                 cursor-pointer
                 text-[16px] ${index === navLinks.length - 1 ? 'mr-0' : 'mb-4'} 
-              text-white`}>
+              text-black`}>
                 <a
                 className="float-left"
                 onClick={() =>
@@ -93,9 +94,9 @@ const Navbar = () => {
                 src={iconArrowDark} />
                 </a>
 
-
-                <div className={`${openId !== nav.id ? "hidden" : "relative"} mr-10`}>
-              <ul className='list-none mt-10 absolute dropdown-background'>
+                 {/* drop down hamburger menu items */}
+                <div className={`${openId !== nav.id ? "hidden" : "relative"} px-25 items-center text-center`}>
+              <ul className='list-none mt-10 dropdown-background-mobile'>
                 {nav.links.map((link, index) => (
                   <li
                     key={link.name}

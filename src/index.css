@@ -43,3 +43,13 @@
   padding-bottom: 15px;
 }
 
+.dropdown-background-mobile {
+  background-color: rgba(206, 201, 201, 0.356);
+  border-radius: 5px;
+  width: 250px;
+  height: auto;
+  margin-left: 0px;
+  border-left-width: 0px;
+  padding: 15px 45px 15px 45px;
+  align-items: center;
+}
