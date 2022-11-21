@@ -6,7 +6,7 @@ module.exports = {
     extend: {
       colors: {
         ctaPrimary: 'hsl(356, 100%, 66%)',
-        ctaSecondary: 'hsl(355, 100%, 74%)',
+        ctaHover: 'hsl(355, 100%, 74%)',
         headingColor: 'hsl(208, 49%, 24%)',
         footerTextColor: 'hsl(240, 2%, 79%)',
         bodyColor: 'hsl(207, 13%, 34%)',

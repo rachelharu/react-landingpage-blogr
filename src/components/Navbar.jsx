@@ -8,45 +8,19 @@ import {
 } from '../assets';
 import { navLinks } from '../constants';
 
-
-// const ImageChange = () =>{
-//   const [selected, setSelected] = useState(iconArrowLight)
-
-//  return(
-//          <img className='ml-2 mt-1 cursor-pointer float-right w-[9px] h-[6px]'
-//          onClick={() => setSelected({ rotate: true })}
-//          src={selected} />
-//  )
-// };
-
-// const ImageChange = () => {
-//   const [isActive, setIsActive] = useState(false);
-  
-//   const handleClick = event => {
-//     setIsActive(current => !current);
-//   };
-
-//   return (
-//     <img className={`${isActive ? 'rotate' : ''} ml-2 mt-1 cursor-pointer float-right w-[9px] h-[6px]`}
-//     onClick={handleClick}
-//     src={iconArrowLight} />
-//   )
-// }
-
 const Navbar = () => {
   const [openId, setOpenId] = useState(undefined);
 
-  
   return (
     <nav className='w-full flex py-6 ml-10 justify-between items-center navbar'>
+
+        {/* logo and dropdown menus */}
       <img src={logo} alt='blogr' className='w-[75px] h-[30px]' />
-
       <ul className='list-none sm:flex hidden ml-10 justify-start items-center flex-1'>
-
         {navLinks.map((nav, index) => (
           <li
             key={nav.id}
-            className={`font-overpass
+            className={`font-ubuntu
             font-normal
             hover:underline
             text-[12px] ${index === navLinks.length - 1 ? 'mr-0' : 'mr-10'}
@@ -57,10 +31,12 @@ const Navbar = () => {
               href={`#${nav.id}`}>
               {nav.title}
               {/* <ImageChange /> */}
-              <img className={`${openId === nav.id ? 'rotate-180' : ''} ml-2 mt-1 cursor-pointer float-right w-[9px] h-[6px]`}
+              <img className={`${openId === nav.id ? 'rotate-180' : ''}
+              ml-2 mt-1 cursor-pointer float-right w-[9px] h-[6px]`}
               src={iconArrowLight} />
             </a>
 
+            {/* drop down menu */}
             <div className={`${openId !== nav.id ? "hidden" : "relative"} mr-10`}>
               <ul className='list-none mt-10 absolute dropdown-background'>
                 {nav.links.map((link, index) => (
@@ -74,12 +50,68 @@ const Navbar = () => {
               </ul>
             </div>
           </li>              
-          
-
         ))}
       </ul>
 
+        {/* login & signup buttons */}
+      <div className='sm:flex hidden flex-1 justify-end items-center mr-20
+      text-white text-[14px] font-medium font-ubuntu'>
+        <button className='mr-10'>Login</button>
+        <button class="bg-white text-ctaPrimary hover:bg-ctaHover hover:text-white
+        font-bold py-2 px-7 rounded-full">
+          Sign up
+        </button>
+      </div>
       
+        {/* hamburger menu */}
+      <div className='sm:hidden flex flex-1 justify-end items-center mr-10'>
+        <img
+          src={openId ? iconClose : iconHamburger}
+          alt='menu'
+          className='w-[28px] h-[28px] object-contain'
+          onClick={() => setOpenId((prev) => !prev)}/>
+
+        <div className={`${ openId ? 'flex' : 'hidden'} 
+        p-6 absolute top-20 right-0 
+        mx-4 my-2 min-w-[140px]`}>
+         <ul className='list-none flex flex-col justify-end items-center flex-1'>
+            {navLinks.map((nav, index) => (
+              <li
+                key={nav.id}
+                className={`font-poppins
+                font-normal
+                cursor-pointer
+                text-[16px] ${index === navLinks.length - 1 ? 'mr-0' : 'mb-4'} 
+              text-white`}>
+                <a
+                className="float-left"
+                onClick={() =>
+                setOpenId((prev) => (prev === nav.id ? true : nav.id))}
+                 href={`#${nav.id}`}>{nav.title}
+                <img className={`${openId === nav.id ? 'rotate-180' : ''}
+                ml-2 mt-1 cursor-pointer float-right w-[9px] h-[6px]`}
+                src={iconArrowDark} />
+                </a>
+
+
+                <div className={`${openId !== nav.id ? "hidden" : "relative"} mr-10`}>
+              <ul className='list-none mt-10 absolute dropdown-background'>
+                {nav.links.map((link, index) => (
+                  <li
+                    key={link.name}
+                    className={`font-ubuntu font-normal text-black cursor-pointer hover:font-bold ${
+                      index !== nav.links.length - 1 ? 'mb-4' : 'mb-0'}`}>
+                    {link.name}
+                  </li>
+                ))}
+              </ul>
+            </div>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </div>
+
     </nav>
   );
 };
