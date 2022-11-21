@@ -29,3 +29,16 @@
     hsl(237, 23%, 32%)
     );
 }
+
+.dropdown-background {
+  background-color: white;
+  border-radius: 5px;
+  width: auto;
+  height: auto;
+  margin-left: 0px;
+  border-left-width: 0px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
