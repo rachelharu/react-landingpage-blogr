@@ -79,13 +79,13 @@ const Navbar = () => {
             {navLinks.map((nav, index) => (
               <li
                 key={nav.id}
-                className={`font-poppins
+                className={`font-poppins 
                 font-bold
                 cursor-pointer
                 text-[16px] ${index === navLinks.length - 1 ? 'mr-0' : 'mb-4'} 
               text-headingColor`}>
                 <a
-                className="float-left text-headingColor"
+                className={`${openId !== nav.id ? "" : "ml-16" } float-left text-headingColor`}
                 onClick={() =>
                 setOpenId((prev) => (prev === nav.id ? true : nav.id))}
                  href={`#${nav.id}`}>
@@ -108,7 +108,7 @@ const Navbar = () => {
                     </li>
                     ))}
                   </ul>
-               </div>
+                </div>
               </li>
             ))}
             <hr className="my-8 w-80 h-px bg-gray-200 border-0 dark:bg-gray-700"></hr>   
