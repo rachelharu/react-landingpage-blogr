@@ -23,6 +23,22 @@
   );
 }
 
+.background-img {
+  background-image: url('./assets/bg-pattern-intro-desktop.svg')!important;
+  background-repeat:no-repeat;
+  background-size: 100% 100%;
+  
+
+}
+
+.button-cta-gradient {
+  background: linear-gradient(
+    0.25turn,
+    hsl(13, 100%, 72%),
+    hsl(353, 100%, 62%)
+  );
+}
+
 .bg-body-gradient {
   background: linear-gradient(
     hsl(237, 17%, 21%),
@@ -44,7 +60,7 @@
 }
 
 .dropdown-background-mobile {
-  background-color: rgba(206, 201, 201, 0.356);
+  background-color: rgba(192, 199, 204, 0.226);
   border-radius: 5px;
   width: 250px;
   height: auto;
@@ -52,4 +68,13 @@
   border-left-width: 0px;
   padding: 15px 45px 15px 45px;
   align-items: center;
+}
+
+@media screen and (max-width: 760px) {
+  .bg-cta-gradient {
+    background: linear-gradient(
+      hsl(13, 100%, 72%),
+      hsl(353, 100%, 62%)
+    );
+  }
 }

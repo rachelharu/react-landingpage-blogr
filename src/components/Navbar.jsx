@@ -32,7 +32,7 @@ const Navbar = () => {
               {nav.title}
               {/* <ImageChange /> */}
               <img className={`${openId === nav.id ? 'rotate-180' : ''}
-              ml-2 mt-1 cursor-pointer float-right w-[9px] h-[6px]`}
+              ml-2 mt-1.5 cursor-pointer float-right w-[9px] h-[6px]`}
               src={iconArrowLight} />
             </a>
 
@@ -56,7 +56,7 @@ const Navbar = () => {
         {/* login & signup buttons */}
       <div className='sm:flex hidden flex-1 justify-end items-center mr-20
       text-white text-[14px] font-medium font-ubuntu'>
-        <button className='mr-10'>Login</button>
+        <button className='mr-10 hover:underline'>Login</button>
         <button class="bg-white text-ctaPrimary hover:bg-ctaHover hover:text-white
         font-bold py-2 px-7 rounded-full">
           Sign up
@@ -71,7 +71,7 @@ const Navbar = () => {
           className='w-[28px] h-[28px] object-contain'
           onClick={() => setOpenId((prev) => !prev)}/>
 
-        {/* hamburger items list */}
+        {/* hamburger items */}
         <div className={`${ openId ? 'flex' : 'hidden'} 
         p-6 absolute top-20 right-0 
         mx-4 my-2 min-w-[140px] w-[90%] bg-white rounded`}>
@@ -80,39 +80,51 @@ const Navbar = () => {
               <li
                 key={nav.id}
                 className={`font-poppins
-                font-normal
+                font-bold
                 cursor-pointer
                 text-[16px] ${index === navLinks.length - 1 ? 'mr-0' : 'mb-4'} 
-              text-black`}>
+              text-headingColor`}>
                 <a
-                className="float-left"
+                className="float-left text-headingColor"
                 onClick={() =>
                 setOpenId((prev) => (prev === nav.id ? true : nav.id))}
-                 href={`#${nav.id}`}>{nav.title}
+                 href={`#${nav.id}`}>
+                 {nav.title}
                 <img className={`${openId === nav.id ? 'rotate-180' : ''}
                 ml-2 mt-1 cursor-pointer float-right w-[9px] h-[6px]`}
                 src={iconArrowDark} />
                 </a>
 
                  {/* drop down hamburger menu items */}
-                <div className={`${openId !== nav.id ? "hidden" : "relative"} px-25 items-center text-center`}>
-              <ul className='list-none mt-10 dropdown-background-mobile'>
-                {nav.links.map((link, index) => (
-                  <li
-                    key={link.name}
-                    className={`font-ubuntu font-normal text-black cursor-pointer hover:font-bold ${
-                      index !== nav.links.length - 1 ? 'mb-4' : 'mb-0'}`}>
+                <div className={`${openId !== nav.id ? "hidden" : "relative" } px-25 
+                  items-center text-center`}>
+                  <ul className='list-none mt-10 dropdown-background-mobile'>
+                    {nav.links.map((link, index) => (
+                    <li
+                      key={link.name}
+                      className={`font-ubuntu font-normal text-bodyColor cursor-pointer 
+                      hover:font-bold ${index !== nav.links.length - 1 ? 'mb-4' : 'mb-0'}`}>
                     {link.name}
-                  </li>
-                ))}
-              </ul>
-            </div>
+                    </li>
+                    ))}
+                  </ul>
+               </div>
               </li>
             ))}
+            <hr className="my-8 w-80 h-px bg-gray-200 border-0 dark:bg-gray-700"></hr>   
+                  {/* login & signup */}
+            <div className='flex flex-col justify-center items-center
+              text-[14px] font-medium font-ubuntu'>
+              <button className='text-black hover:underline text-[15px]'>Login</button>
+              <button className=" text-white button-cta-gradient hover:bg-ctaHover hover:text-white 
+                my-5 font-bold py-2 px-7 rounded-full">
+                Sign up
+              </button>
+            </div> 
+
           </ul>
         </div>
       </div>
-
     </nav>
   );
 };
