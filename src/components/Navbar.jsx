@@ -21,9 +21,9 @@ const Navbar = () => {
           <li
             key={nav.id}
             className={`font-ubuntu
-            font-normal
+            font-medium
             hover:underline
-            text-[12px] ${index === navLinks.length - 1 ? 'mr-0' : 'mr-9'}
+            text-[13px] ${index === navLinks.length - 1 ? 'mr-0' : 'mr-9'}
           text-white`}>
             <a
               className='float-left'
