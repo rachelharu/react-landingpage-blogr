@@ -2,16 +2,16 @@ import React from 'react';
 
 const CTA = () => {
   return (
-    <div className="grid place-items-center">
-      <h1>A modern publishing platform</h1>
-      <h3>Grow your audience and build your online brand</h3>
+    <div className="flex-col justify-center text-center">
+      <h1 className="mobile-font-change flex justify-center font-normal text-white text-[50px]">A modern publishing platform</h1>
+      <h3 className="flex justify-center font-light text-white">Grow your audience and build your online brand</h3>
 
-      <button>
+      {/* <button>
       Start for Free
       </button>
       <button>
       Learn More
-      </button>
+      </button> */}
     </div>
   );
 };
