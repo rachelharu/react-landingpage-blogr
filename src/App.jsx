@@ -6,10 +6,10 @@ const App = () => (
     <div className='bg-cta-gradient h-[450px]'>
       <div className={`flex-col h-[450px] relative overflow-hidden ${styles.paddingX} ${styles.flexCenter}`}>
         <div className="background-img z-[0] absolute"></div>
-        <div className={`mt-5 margin-bottom z-[2] ${styles.boxWidth}`}>
+        <div className={`mt-5 margin-bottom absolute z-[2] ${styles.boxWidth}`}>
           <Navbar />
         </div>
-        <div className={`${styles.boxWidth}`}> 
+        <div className={`z-[0] ${styles.boxWidth}`}> 
           <CTA />
         </div>
       </div>

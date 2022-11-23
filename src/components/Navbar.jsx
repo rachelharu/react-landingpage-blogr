@@ -74,7 +74,7 @@ const Navbar = () => {
         {/* hamburger items */}
         <div className={`${ openId ? 'flex' : 'hidden'} 
         p-6 absolute top-20 right-0 
-        mx-4 my-2 min-w-[140px] w-[90%] bg-white rounded`}>
+        mx-4 my-2 min-w-[140px] w-[90%] shadow-md bg-white rounded`}>
          <ul className='list-none flex flex-col items-center flex-1'>
             {navLinks.map((nav, index) => (
               <li
