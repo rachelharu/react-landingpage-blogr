@@ -26,7 +26,16 @@
 .background-img {
   background-image: url('./assets/bg-pattern-intro-desktop.svg') !important;
   background-repeat: no-repeat;
-  background-size: 100% 100%;
+  background-size: contain;
+  width: 3100px;
+  height: 3100px;
+  overflow: hidden;
+  margin-left: 900px;
+  margin-top: 150px;
+}
+
+.margin-bottom {
+  margin-bottom: 320px;
 }
 
 .button-cta-gradient {

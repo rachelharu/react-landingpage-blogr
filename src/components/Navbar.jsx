@@ -13,7 +13,7 @@ const Navbar = () => {
 
   return (
     <nav className='w-full flex py-6 ml-5 justify-between items-center navbar'>
-
+      
         {/* logo and dropdown menus */}
       <img src={logo} alt='blogr' className='w-[75px] h-[30px]' />
       <ul className='list-none sm:flex hidden ml-10 justify-start items-center flex-1'>
@@ -23,7 +23,7 @@ const Navbar = () => {
             className={`font-ubuntu
             font-normal
             hover:underline
-            text-[12px] ${index === navLinks.length - 1 ? 'mr-0' : 'mr-10'}
+            text-[12px] ${index === navLinks.length - 1 ? 'mr-0' : 'mr-9'}
           text-white`}>
             <a
               className='float-left'
@@ -42,7 +42,7 @@ const Navbar = () => {
                 {nav.links.map((link, index) => (
                   <li
                     key={link.name}
-                    className={`font-ubuntu font-normal text-black cursor-pointer hover:font-bold ${
+                    className={`font-ubuntu font-normal text-headingColor cursor-pointer hover:font-bold ${
                       index !== nav.links.length - 1 ? 'mb-4' : 'mb-0'}`}>
                     {link.name}
                   </li>

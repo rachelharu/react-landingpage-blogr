@@ -3,9 +3,10 @@ import { Navbar, CTA, BodyTop, BodyBottom, BodyMiddle, Footer } from './componen
 
 const App = () => (
   <div className='w-full overflow-hidden'>
-    <div className='bg-cta-gradient h-[400px]'>
-      <div className={`flex-col background-img ${styles.paddingX} ${styles.flexCenter}`}>
-        <div className={`mt-5 ${styles.boxWidth}`}>
+    <div className='bg-cta-gradient h-[450px]'>
+      <div className={`flex-col h-[450px] relative overflow-hidden ${styles.paddingX} ${styles.flexCenter}`}>
+        <div className="background-img z-[0] absolute"></div>
+        <div className={`mt-5 margin-bottom z-[2] ${styles.boxWidth}`}>
           <Navbar />
         </div>
         <div className={`${styles.boxWidth}`}> 
@@ -14,7 +15,7 @@ const App = () => (
       </div>
     </div>
 
-    <div className={`bg-bodyColor ${styles.flexStart}`}>
+    <div className={`bg-bodyColor z-[2] ${styles.flexStart}`}>
       <div className={`${styles.boxWidth}`}> 
           <BodyTop />
           <BodyMiddle />
