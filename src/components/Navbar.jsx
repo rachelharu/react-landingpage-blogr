@@ -72,20 +72,19 @@ const Navbar = () => {
           onClick={() => setOpenId((prev) => !prev)}/>
 
         {/* hamburger items */}
-        <div className={`${ openId ? 'flex' : 'hidden'} 
-        p-6 absolute top-20 right-0 
+        <div className={`${ openId ? 'flex' : 'hidden'} hamburger-menu
+        p-6 fixed top-20 right-0
         mx-4 my-2 min-w-[140px] w-[90%] shadow-md bg-white rounded`}>
          <ul className='list-none flex flex-col items-center flex-1'>
             {navLinks.map((nav, index) => (
               <li
                 key={nav.id}
-                className={`font-poppins 
-                font-bold
-                cursor-pointer
-                text-[16px] ${index === navLinks.length - 1 ? 'mr-0' : 'mb-4'} 
-              text-headingColor`}>
+                className={`font-overpass ${openId === nav.id ? 'text-bodyColor' : 'text-footerBgColor'}
+                cursor-pointer font-medium
+                text-[17px] ${index === navLinks.length - 1 ? 'mr-0' : 'mb-4'} 
+                `}>
                 <a
-                className={`${openId !== nav.id ? "" : "ml-16" } float-left text-headingColor`}
+                className={`${openId !== nav.id ? "" : "ml-16" } float-left`}
                 onClick={() =>
                 setOpenId((prev) => (prev === nav.id ? true : nav.id))}
                  href={`#${nav.id}`}>
@@ -115,8 +114,8 @@ const Navbar = () => {
                   {/* login & signup */}
             <div className='flex flex-col justify-center items-center
               text-[14px] font-medium font-ubuntu'>
-              <button className='text-black hover:underline text-[15px]'>Login</button>
-              <button className=" text-white button-cta-gradient hover:bg-ctaHover hover:text-white 
+              <button className='text-footerBgColor hover:underline text-[15px]'>Login</button>
+              <button className=" text-white button-cta-gradient hover:bg-ctaHover hover:text-footerBgColor
                 my-5 font-bold py-2 px-7 rounded-full">
                 Sign Up
               </button>
