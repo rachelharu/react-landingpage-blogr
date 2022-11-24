@@ -3,13 +3,14 @@ import { Navbar, CTA, BodyTop, BodyBottom, BodyMiddle, Footer } from './componen
 
 const App = () => (
   <div className='w-full overflow-hidden'>
-    <div className='bg-cta-gradient z-[0] h-[450px]'>
-      <div className={`fix-bg-img flex-col h-[450px] relative overflow-hidden ${styles.paddingX} ${styles.flexCenter}`}>
+    <div className='bg-cta-gradient z-[0] h-[450px] mobile-height-change'>
+      <div className={`fix-bg-img flex-col h-[450px] mobile-height-change
+       relative overflow-hidden ${styles.paddingX} ${styles.flexCenter}`}>
         <div className="background-img z-[0] absolute overflow-hidden"></div>
         <div className={`mt-5 margin-bottom absolute z-[2] ${styles.boxWidth}`}>
           <Navbar />
         </div>
-        <div className={`z-[0] ${styles.boxWidth}`}> 
+        <div className={`z-[0] mt-5 cta-mobile-change ${styles.boxWidth}`}> 
           <CTA />
         </div>
       </div>

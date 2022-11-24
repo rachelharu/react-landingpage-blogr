@@ -164,6 +164,19 @@
   }
 
   .mobile-font-change {
-    font-size: 30px;
+    font-size: 35px;
+    font-weight: medium;
+  }
+
+  .mobile-height-change {
+    height: 550px!important;
+  }
+
+  .margin-bottom {
+    margin-bottom: 450px;
+  }
+
+  .cta-mobile-change {
+    margin-top: 50px;
   }
 }
