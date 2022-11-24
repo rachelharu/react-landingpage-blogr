@@ -59,7 +59,7 @@ const Navbar = () => {
         <button className='mr-10 hover:underline'>Login</button>
         <button class="bg-white text-ctaPrimary hover:bg-ctaHover hover:text-white
         font-bold py-2 px-7 rounded-full">
-          Sign up
+          Sign Up
         </button>
       </div>
       
@@ -118,7 +118,7 @@ const Navbar = () => {
               <button className='text-black hover:underline text-[15px]'>Login</button>
               <button className=" text-white button-cta-gradient hover:bg-ctaHover hover:text-white 
                 my-5 font-bold py-2 px-7 rounded-full">
-                Sign up
+                Sign Up
               </button>
             </div> 
 
