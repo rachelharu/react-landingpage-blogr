@@ -16,7 +16,7 @@ const App = () => (
       </div>
     </div>
 
-    <div className={`bg-bodyColor z-[1] ${styles.flexStart}`}>
+    <div className={`z-[1] ${styles.flexStart}`}>
       <div className={`${styles.boxWidth}`}> 
           <BodyTop />
           <BodyMiddle />

@@ -13,7 +13,6 @@ const Navbar = () => {
 
   return (
     <nav className='w-full flex py-6 ml-5 justify-between items-center navbar'>
-      
         {/* logo and dropdown menus */}
       <img src={logo} alt='blogr' className='w-[75px] h-[30px]' />
       <ul className='list-none sm:flex hidden ml-10 justify-start items-center flex-1'>
@@ -41,6 +40,7 @@ const Navbar = () => {
               <ul className='list-none mt-10 absolute dropdown-background'>
                 {nav.links.map((link, index) => (
                   <li
+                    // onClick={() => setOpenId((prev) => (prev === nav.id ? undefined : ''))}
                     key={link.name}
                     className={`font-ubuntu font-normal text-headingColor cursor-pointer hover:font-bold ${
                       index !== nav.links.length - 1 ? 'mb-4' : 'mb-0'}`}>
@@ -124,6 +124,7 @@ const Navbar = () => {
           </ul>
         </div>
       </div>
+
     </nav>
   );
 };
