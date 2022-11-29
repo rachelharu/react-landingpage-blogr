@@ -33,7 +33,7 @@ const BodyTop = () => {
           <picture className=''>
             <source media='(min-width:650px)'
              srcset={illustrationEditorDesktop}></source>
-             <img className='mt-5 lg:mt-0 xl:mt-0 lg:ml-96' src={illustrationEditorMobile} />
+             <img className='mt-5 lg:mt-0 xl:mt-0 md:ml-72 lg:ml-96' src={illustrationEditorMobile} />
           </picture>
         </div>
 
