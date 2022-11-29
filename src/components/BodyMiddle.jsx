@@ -2,7 +2,10 @@ import React from 'react'
 
 const BodyMiddle = () => {
   return (
-    <div>BodyMiddle</div>
+    <div>
+    
+    
+    </div>
   )
 }
 
