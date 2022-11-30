@@ -3,8 +3,8 @@ import { bgPatternCircles, illustrationPhones } from '../assets';
 
 const BodyMiddle = () => {
   return (
-    <div className='relative flex '>
-      <div className='overflow-hidden h-[400px] rounded-borders'>
+    <div className='relative flex h-[500px]'>
+      <div className='overflow-hidden h-[450px] rounded-borders'>
         <img
           className='relative h-[1000px] w-[950px] md:right-[180px] bottom-[570px] mobile-circle-image'
           src={bgPatternCircles}
@@ -16,7 +16,8 @@ const BodyMiddle = () => {
              bottom-[60px]'
         src={illustrationPhones}
       /> */}
-    <div className='relative z-10 mt-[100px] w-[50%]'>
+
+    <div className='absolute md:relative flex-col z-10 mt-[100px] w-[50%] ml-32 md:pl-0 sm:pl-32 justify-center items-center'>
       <h3>State of the Art Infrastructure</h3>
       <p>
         With reliability and speed in mind, worldwide data centers provide the
