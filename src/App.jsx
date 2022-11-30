@@ -33,7 +33,7 @@ const App = () => (
       </div>
     </div>
     
-    <div className='w-full h-[650px] md:h-[350px] bg-body-gradient overflow-hidden'>
+    <div className='w-full h-[650px] md:h-[350px] '>
           <BodyMiddle />
     </div>
 

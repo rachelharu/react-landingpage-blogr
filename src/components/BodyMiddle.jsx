@@ -3,27 +3,27 @@ import { bgPatternCircles, illustrationPhones } from '../assets';
 
 const BodyMiddle = () => {
   return (
-    <div className='relative'>
+    <div className='relative mt-0 sm:mt-40'>
       {/* phone image  */}
-      <div className='absolute z-10 bottom-[250px] overflow-visible'>
+      <div className='z-10'>
       <img
-        className='z-10 overflow-visible'
+        className='z-10 absolute top-[-40%] sm:top-[-50%] left-0 sm:left-[150px] md:left-0'
         src={illustrationPhones}
       />
       </div>
-      {/* background image  */}
-      <div className='relative flex h-[500px] md:h-[350px] left-0 md:left-[40px]'>
+      {/* background image and content  */}
+      <div className='relative flex h-[550px] md:h-[350px] bg-body-gradient overflow-hidden'>
+        {/* background image  */}
         <div className='h-[450px] rounded-borders'>
           <img
             className='relative h-[1000px] w-[950px] md:right-[130px] bottom-[570px] mobile-circle-image'
             src={bgPatternCircles}
           />
         </div>
-
         {/* body content  */}
         <div
           className='absolute md:relative flex-col z-1 mt-[100px] w-[100%] 
-         justify-center items-center'>
+         justify-center items-center bottom-[140px] md:bottom-[0px]'>
           <h3 className='font-medium text-[34px] text-white text-center md:text-left mt-40 md:mt-0 mb-2 md:mb-0'>
             State of the Art Infrastructure
           </h3>

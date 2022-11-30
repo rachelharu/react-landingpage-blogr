@@ -3,7 +3,7 @@ import { illustrationEditorDesktop, illustrationEditorMobile } from '../assets';
 
 const BodyTop = () => {
   return (
-    <div className='w-full mb-20'>
+    <div className='w-full mb-5'>
       <h2 className='text-center mt-20 md:mt-36 text-[30px] text-headingColor font-medium'>
         Designed for the future</h2>
       {/* container for left side items and image */}
