@@ -29,9 +29,9 @@ const App = () => (
           <BodyTop />
       </div>
     </div>
-    <div className='z-3 bg-body-gradient h-[270px] flex flex-col'>
+    <div className='w-full bg-body-gradient h-[350px]'>
           <BodyMiddle />
-          
+   
     </div>
 
     <BodyBottom />
