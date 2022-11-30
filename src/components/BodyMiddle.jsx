@@ -17,10 +17,11 @@ const BodyMiddle = () => {
         src={illustrationPhones}
       /> */}
 
-    <div className='absolute md:relative flex-col z-10 mt-[100px] w-[50%] ml-28 sm:ml-52 md:ml-40 mr-0 lg:right-32
+    <div className='absolute md:relative flex-col z-10 mt-[100px] w-[100%] 
          justify-center items-center'>
-      <h3>State of the Art Infrastructure</h3>
-      <p>
+      <h3 className='font-medium text-[34px] text-white text-center md:text-left mt-40 md:mt-0 mb-2 md:mb-0'>
+      State of the Art Infrastructure</h3>
+      <p className='text-[14px] text-white text-center md:text-left'>
         With reliability and speed in mind, worldwide data centers provide the
         backbone for ultra-fast connectivity. This ensures your site will load
         instantly, no matter where your readers are, keeping your site
