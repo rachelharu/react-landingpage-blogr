@@ -11,10 +11,11 @@ import {
 const App = () => (
   <div className='w-full overflow-hidden'>
     <div className='bg-cta-gradient z-[0] h-[450px] mobile-height-change'>
-      <div
-        className={`fix-bg-img flex-col h-[450px] mobile-height-change
-       relative overflow-hidden ${styles.paddingX} ${styles.flexCenter}`}>
+      <div className={`fix-bg-img flex-col h-[450px] mobile-height-change
+        relative overflow-hidden ${styles.paddingX} ${styles.flexCenter}`}>
+        {/* background image  */}
         <div className='background-img z-[0] absolute overflow-hidden'></div>
+         {/* header section  */}
         <div className={`mt-5 margin-bottom absolute z-[2] ${styles.boxWidth}`}>
           <Navbar />
         </div>
@@ -24,14 +25,16 @@ const App = () => (
       </div>
     </div>
 
-    <div className={`${styles.flexStart}`}>
+        {/* body sections  */}
+    <div className={`${styles.flexStart} mobile-margin-change`}>
       <div className={`${styles.boxWidth}`}>
           <BodyTop />
       </div>
     </div>
-    <div className='w-full bg-body-gradient h-[350px]'>
+    
+    <div className='w-full bg-body-gradient h-[650px] md:h-[350px]'>
           <BodyMiddle />
-   
+
     </div>
 
     <BodyBottom />

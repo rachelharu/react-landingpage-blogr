@@ -4,13 +4,15 @@ import { illustrationEditorDesktop, illustrationEditorMobile } from '../assets';
 const BodyTop = () => {
   return (
     <div className='w-full mb-20'>
-      <h2 className='text-center mt-20 md:mt-36 text-[30px] text-headingColor font-medium'>Designed for the future</h2>
+      <h2 className='text-center mt-20 md:mt-36 text-[30px] text-headingColor font-medium'>
+        Designed for the future</h2>
       {/* container for left side items and image */}
       <div className='flex flex-col-reverse px-6 mx-auto 
       space-y-0 md:flex-row '>
       {/* left side items */}
         <div className='mt-10 md:mt-32 mb-32 md:w-1/2'>
-          <h3 className='md:mt-20 text-headingColor font-medium text-[25px] text-center md:text-left'>Introducing an extensible editor</h3>
+          <h3 className='md:mt-20 text-headingColor font-medium text-[25px] text-center md:text-left'>
+           Introducing an extensible editor</h3>
           <p className='text-bodyColor font-light mt-2 items-center text-center sm:text-left'>
             Blogr features an exceedingly intuitive interface which lets you
             focus on one thing: creating content. The editor supports management
@@ -20,7 +22,8 @@ const BodyTop = () => {
             blog.
           </p>
 
-          <h3 className='mt-10 text-headingColor font-medium text-[25px] text-center md:text-left'>Robust content management</h3>
+          <h3 className='mt-10 text-headingColor font-medium text-[25px] text-center md:text-left'>
+           Robust content management</h3>
           <p className='text-bodyColor font-light mt-2 items-center text-center sm:text-left'>
             Flexible content management enables users to easily move through
             posts. Increase the usability of your blog by adding customized
