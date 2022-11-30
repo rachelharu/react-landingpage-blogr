@@ -7,6 +7,7 @@ import {
   BodyMiddle,
   Footer,
 } from './components';
+import { illustrationPhones } from './assets';
 
 const App = () => (
   <div className='w-full overflow-hidden'>
@@ -32,9 +33,8 @@ const App = () => (
       </div>
     </div>
     
-    <div className='w-full bg-body-gradient h-[650px] md:h-[350px]'>
+    <div className='w-full h-[650px] md:h-[350px] bg-body-gradient overflow-hidden'>
           <BodyMiddle />
-
     </div>
 
     <BodyBottom />

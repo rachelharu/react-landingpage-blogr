@@ -35,11 +35,9 @@
   margin-bottom: 40px;
 }
 
-
 .margin-bottom {
   margin-bottom: 350px;
 }
-
 
 .button-cta-gradient {
   background: linear-gradient(
@@ -50,15 +48,13 @@
 }
 
 .bg-body-gradient {
-  background: linear-gradient(0.25turn,hsl(237, 17%, 21%), hsl(237, 23%, 32%));
+  background: linear-gradient(0.25turn, hsl(237, 17%, 21%), hsl(237, 23%, 32%));
   border-radius: 0px 70px 0px 70px;
-  overflow: hidden; 
 }
 
 .rounded-borders {
   border-radius: 0px 70px 0px 70px;
 }
-
 
 .dropdown-background {
   background-color: white;
@@ -164,8 +160,8 @@
     margin-top: 250px;
   }
 
-  .hamburger-menu{
-    padding-left: 0!important;
+  .hamburger-menu {
+    padding-left: 0 !important;
   }
 
   .fix-bg-img {
@@ -178,7 +174,7 @@
   }
 
   .mobile-height-change {
-    height: 550px!important;
+    height: 550px !important;
   }
 
   .mobile-margin-change {
@@ -194,8 +190,8 @@
   }
 
   .mobile-circle-image {
-    width: 800px!important;
-    height: 700px!important;
+    width: 800px !important;
+    height: 700px !important;
     bottom: 300px;
   }
 }
