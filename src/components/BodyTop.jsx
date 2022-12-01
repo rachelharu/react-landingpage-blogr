@@ -13,7 +13,7 @@ const BodyTop = () => {
         <div className='mt-10 md:mt-32 mb-32 md:w-1/2'>
           <h3 className='md:mt-20 text-headingColor font-medium text-[25px] text-center md:text-left'>
            Introducing an extensible editor</h3>
-          <p className='text-bodyColor font-light mt-2 items-center text-center sm:text-left'>
+          <p className='text-bodyColor text-[15px] font-light mt-2 items-center text-center sm:text-left'>
             Blogr features an exceedingly intuitive interface which lets you
             focus on one thing: creating content. The editor supports management
             of multiple blogs and allows easy manipulation of embeds such as
@@ -24,7 +24,7 @@ const BodyTop = () => {
 
           <h3 className='mt-10 text-headingColor font-medium text-[25px] text-center md:text-left'>
            Robust content management</h3>
-          <p className='text-bodyColor font-light mt-2 items-center text-center sm:text-left'>
+          <p className='text-bodyColor text-[15px] font-light mt-2 items-center text-center sm:text-left'>
             Flexible content management enables users to easily move through
             posts. Increase the usability of your blog by adding customized
             categories, sections, format, or flow. With this functionality,

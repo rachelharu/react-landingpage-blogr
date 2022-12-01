@@ -37,7 +37,12 @@ const App = () => (
           <BodyMiddle />
     </div>
 
-    <BodyBottom />
+    <div className={`${styles.flexStart}`}>
+      <div className={`${styles.boxWidth}`}>
+          <BodyBottom />
+      </div>
+    </div>
+    
     <Footer />
   </div>
 );
