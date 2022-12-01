@@ -42,7 +42,11 @@ const App = () => (
       </div>
     </div>
     
-    <Footer />
+       {/* footer section  */}
+    <div className='bg-footerBgColor h-[650px] rounded-tr-[80px]'>
+      <Footer />
+    </div>
+    
   </div>
 );
 
