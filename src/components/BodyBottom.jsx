@@ -23,7 +23,7 @@ const BodyBottom = () => {
         </div>
 
         {/* right side items */}
-        <div className='!mt-5 lg:!mt-24 md:w-1/2'>
+        <div className='!mt-5 md:!mt-24 lg:!mt-24 md:w-1/2'>
           <h3 className='md:mt-20 mb-5 text-headingColor font-medium text-[25px] text-center md:text-left'>
             Free, open, simple
           </h3>

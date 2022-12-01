@@ -7,7 +7,6 @@ import {
   BodyMiddle,
   Footer,
 } from './components';
-import { illustrationPhones } from './assets';
 
 const App = () => (
   <div className='w-full overflow-hidden'>

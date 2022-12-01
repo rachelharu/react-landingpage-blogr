@@ -6,11 +6,12 @@ const BodyMiddle = () => {
     <div className='relative mt-0 sm:mt-40'>
       {/* phone image  */}
       <div className='z-10'>
-      <img
-        className='z-10 absolute top-[-40%] sm:top-[-50%] left-0 sm:left-[150px] md:left-0'
-        src={illustrationPhones}
-      />
+        <img
+          className='z-10 absolute top-[-50%] sm:top-[-40%] left-0 sm:left-[150px] md:left-0'
+          src={illustrationPhones}
+        />
       </div>
+
       {/* background image and content  */}
       <div className='relative flex h-[550px] md:h-[350px] bg-body-gradient overflow-hidden'>
         {/* background image  */}
@@ -20,9 +21,9 @@ const BodyMiddle = () => {
             src={bgPatternCircles}
           />
         </div>
+
         {/* body content  */}
-        <div
-          className='absolute md:relative flex-col z-1 mt-[100px] w-[100%] 
+        <div className='absolute md:relative flex-col z-1 mt-[100px] w-[100%] ml-0 md:ml-32
          justify-center items-center bottom-[140px] md:bottom-[0px]'>
           <h3 className='font-medium text-[34px] text-white text-center md:text-left mt-40 md:mt-0 mb-2 md:mb-0'>
             State of the Art Infrastructure
@@ -34,7 +35,6 @@ const BodyMiddle = () => {
             site competitive.
           </p>
         </div>
-
       </div>
     </div>
   );
