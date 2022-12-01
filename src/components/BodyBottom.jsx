@@ -3,13 +3,14 @@ import { illustrationLaptopDesktop, illustrationLaptopMobile } from '../assets';
 
 const BodyBottom = () => {
   return (
-    <div className='w-full mb-5'>
+    <div className='relative w-full mb-5 bottom-[50px]'>
+
       {/* container for left side image and right side items */}
-      <div
-        className='flex flex-col px-6 mx-auto 
-          space-y-0 md:flex-row mt-32'>
+      <div className='flex flex-col px-6 mx-auto 
+          space-y-0 md:flex-row mt-0 md:mt-32'>
         {/* left side image */}
-        <div className='w-full h-full relative right-[300px]'>
+        <div className='w-full h-full relative sm:right-[0px] md:right-[250px] lg:right-[300px] 
+          xl:right-[450px] mb-5'>
           <picture className=''>
             <source
               media='(min-width:650px)'
@@ -22,8 +23,8 @@ const BodyBottom = () => {
         </div>
 
         {/* right side items */}
-        <div className='mt-10 md:mt-32 mb-32 md:w-1/2'>
-          <h3 className='md:mt-20 text-headingColor font-medium text-[25px] text-center md:text-left'>
+        <div className='!mt-5 lg:!mt-24 md:w-1/2'>
+          <h3 className='md:mt-20 mb-5 text-headingColor font-medium text-[25px] text-center md:text-left'>
             Free, open, simple
           </h3>
           <p className='text-bodyColor text-[15px] font-light mt-2 items-center text-center sm:text-left'>
@@ -35,7 +36,7 @@ const BodyBottom = () => {
             learn.
           </p>
 
-          <h3 className='mt-10 text-headingColor font-medium text-[25px] text-center md:text-left'>
+          <h3 className='mt-10 mb-5 text-headingColor font-medium text-[25px] text-center md:text-left'>
             Powerful tooling
           </h3>
           <p className='text-bodyColor text-[15px] font-light mt-2 items-center text-center sm:text-left'>
