@@ -32,7 +32,7 @@ const App = () => (
       </div>
     </div>
     
-    <div className='w-full h-[650px] md:h-[350px] '>
+    <div className='w-full h-[650px] md:h-[350px]'>
           <BodyMiddle />
     </div>
 
@@ -43,7 +43,7 @@ const App = () => (
     </div>
     
        {/* footer section  */}
-    <div className='bg-footerBgColor sm:h-[720px] md:h-[350px] rounded-tr-[80px]'>
+    <div className='bg-footerBgColor sm:h-[720px] md:h-[350px] mt-10 rounded-tr-[80px]'>
       <Footer />
     </div>
     
