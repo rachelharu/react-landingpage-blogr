@@ -5,30 +5,32 @@ import styles from '../style';
 
 const Footer = () => {
   return (
-    <div className={`flex-col md:flex-row ${styles.flexCenter}`}>
-      <img src={logo} alt='blogr' className='w-[75px] h-[30px] mt-20' />
+    <div className={`mr-10 flex-col md:flex-row ${styles.flexCenter}`}>
+    {/* logo image */}
+      <img src={logo} alt='blogr' className='w-[75px] h-[30px] mt-20 ml-10 md:mb-56 md:ml-32' />
 
-        <ul className='list-none sm:flex ml-10 justify-start items-center flex-1'>
+      {/* items list  */}
+        <ul className='list-none sm:flex ml-10 mt-12 md:ml-32 justify-start items-center flex-1'>
         {navLinks.map((nav, index) => (
           <li
             key={nav.id}
-            className={`font-ubuntu
-            font-medium
-            hover:underline
-            text-[13px] ${index === navLinks.length - 1 ? 'mr-0' : 'mr-9'}
+            className={`font-ubuntu text-center md:text-left 
+            font-medium  mb-10 md:ml-32
+            text-[13px] ${index === navLinks.length - 1 ? '' : ''}
           text-white`}>
             <a
-              className='float-left'>
+              className='float-left md:float-none mb-5 ml-2 md:ml-0 hover:cursor-pointer
+               hover:underline'>
               {nav.title}
             </a>
 
-
-            <ul className='list-none mt-10'>
+            <ul className='list-none mt-5'>
                 {nav.links.map((link, index) => (
                   <li
                     key={link.name}
-                    className={`font-normal text-footerTextColor cursor-pointer hover:font-bold ${
-                      index !== nav.links.length - 1 ? 'mb-4' : 'mb-0'}`}>
+                    className={`font-normal text-center md:text-left text-footerTextColor cursor-pointer
+                     hover:underline ${
+                      index !== nav.links.length - 1 ? 'mb-2' : 'mb-0'}`}>
                     {link.name}
                   </li>
                 ))}

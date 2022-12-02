@@ -43,7 +43,7 @@ const App = () => (
     </div>
     
        {/* footer section  */}
-    <div className='bg-footerBgColor h-[720px] rounded-tr-[80px]'>
+    <div className='bg-footerBgColor sm:h-[720px] md:h-[350px] rounded-tr-[80px]'>
       <Footer />
     </div>
     
