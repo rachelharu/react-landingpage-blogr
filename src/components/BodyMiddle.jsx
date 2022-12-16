@@ -3,7 +3,7 @@ import { bgPatternCircles, illustrationPhones } from '../assets';
 
 const BodyMiddle = () => {
   return (
-    <div className='relative mt-0 sm:mt-40'>
+    <div className='relative mt-0 sm:mt-32'>
       {/* phone image  */}
       <div className='z-10'>
         <img
