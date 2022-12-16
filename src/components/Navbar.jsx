@@ -68,7 +68,7 @@ const Navbar = () => {
         <img
           src={openId ? iconClose : iconHamburger}
           alt='menu'
-          className='w-[28px] h-[28px] object-contain'
+          className='w-[28px] h-[28px] object-contain cursor-pointer'
           onClick={() => setOpenId((prev) => !prev)}/>
 
         {/* hamburger items */}
