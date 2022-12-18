@@ -84,7 +84,7 @@ const Navbar = () => {
                 text-[17px] ${index === navLinks.length - 1 ? 'mr-0' : 'mb-4'} 
                 `}>
                 <a
-                className={`${openId !== nav.id ? "" : "ml-16" } float-left`}
+                className={`${openId !== nav.id ? "" : "ml-16" } float-left hover:underline`}
                 onClick={() =>
                 setOpenId((prev) => (prev === nav.id ? true : nav.id))}
                  href={`#${nav.id}`}>
@@ -96,7 +96,7 @@ const Navbar = () => {
 
                  {/* drop down hamburger menu items */}
                 <div className={`${openId !== nav.id ? "hidden" : "relative" } px-25 
-                  items-center text-center`}>
+                  items-center text-center `}>
                   <ul className='list-none mt-10 dropdown-background-mobile'>
                     {nav.links.map((link, index) => (
                     <li
