@@ -22,6 +22,7 @@ Users should be able to:
 
 - HTML, CSS, React, and Tailwind CSS.
 - Vite 
+- AOS
 
 ### What I learned
 
