@@ -6,7 +6,7 @@ import 'aos/dist/aos.css';
 
 const BodyTop = () => {
   useEffect(() => {
-    Aos.init({duration: 2500}); //time it takes animation to complete
+    Aos.init({duration: 1500}); //time it takes animation to complete
   }, []);
 
   return (
