@@ -7,7 +7,7 @@ const BodyMiddle = () => {
       {/* phone image  */}
       <div className='z-10'>
         <img
-          className='z-10 absolute top-[-50%] sm:top-[-40%] left-0 sm:left-[150px] md:left-0'
+          className='z-10 absolute top-[-50%] md:top-[-30%] left-0 sm:left-[150px] md:left-0'
           src={illustrationPhones}
         />
       </div>
