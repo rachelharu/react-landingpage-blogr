@@ -1,7 +1,14 @@
-import React from 'react';
+import React, {useEffect } from 'react';
 import { illustrationEditorDesktop, illustrationEditorMobile } from '../assets';
+import Aos from 'aos';
+import 'aos/dist/aos.css';
+
 
 const BodyTop = () => {
+  useEffect(() => {
+    Aos.init({duration: 1000}); //time it takes animation to complete
+  }, []);
+
   return (
     <div className='w-full mb-16'>
       <h2 className='text-center mt-20 md:mt-36 text-[30px] text-headingColor font-medium'>
