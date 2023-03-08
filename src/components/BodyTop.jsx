@@ -6,18 +6,18 @@ import 'aos/dist/aos.css';
 
 const BodyTop = () => {
   useEffect(() => {
-    Aos.init({duration: 1000}); //time it takes animation to complete
+    Aos.init({duration: 2500}); //time it takes animation to complete
   }, []);
 
   return (
     <div className='w-full mb-16'>
       <h2 className='text-center mt-20 md:mt-36 text-[30px] text-headingColor font-medium'>
         Designed for the future</h2>
-      {/* container for left side items and image */}
+       {/* container for left side items and image */}
       <div className='flex flex-col-reverse px-6 mx-auto
       space-y-0 md:flex-row '>
-      {/* left side items */}
-        <div className='mt-10 md:mt-32 mb-32 md:w-1/2'>
+        {/* left side items */}
+        <div data-aos="fade-right" className='mt-10 md:mt-32 mb-32 md:w-1/2'>
           <h3 className='md:mt-20 text-headingColor font-medium text-[25px] text-center md:text-left'>
            Introducing an extensible editor</h3>
           <p className='text-bodyColor text-[15px] font-light mt-2 items-center text-center sm:text-left'>
@@ -39,11 +39,11 @@ const BodyTop = () => {
           </p>
         </div>
         {/* right side picture */}
-        <div className='w-full h-full relative top-0 sm:top-2 lg:bottom-9 xl:bottom-0'>
+        <div className='w-full h-full relative top-0 sm:top-2 mb-32 lg:bottom-9 xl:bottom-0'>
           <picture className=''>
             <source media='(min-width:650px)'
              srcset={illustrationEditorDesktop}></source>
-             <img className='mt-5 lg:mt-0 xl:mt-0 md:ml-72 lg:ml-[450px]' src={illustrationEditorMobile} />
+             <img className='mt-5 lg:mt-0 xl:mt-0 md:ml-80 lg:ml-[450px]' src={illustrationEditorMobile} />
           </picture>
         </div>
 
