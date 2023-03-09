@@ -201,3 +201,9 @@
     border-radius: 0px 70px 0px 70px;
   }
 }
+
+@media screen and (max-width: 400px) {
+  .margin-bottom {
+    margin-bottom: 500px;
+  }
+}

@@ -16,7 +16,7 @@ const App = () => (
         {/* background image  */}
         <div className='background-img z-[0] absolute overflow-hidden'></div>
          {/* header section  */}
-        <div className={`mt-5 margin-bottom absolute z-[2] ${styles.boxWidth}`}>
+        <div className={`margin-bottom absolute z-[2] ${styles.boxWidth}`}>
           <Navbar />
         </div>
         <div className={`z-[0] mt-5 cta-mobile-change ${styles.boxWidth}`}>
