@@ -11,7 +11,7 @@ const BodyTop = () => {
 
   return (
     <div className='w-full mb-16'>
-      <h2 className='text-center mt-20 md:mt-36 text-[30px] text-headingColor font-medium'>
+      <h2 className='text-center mt-40 md:mt-40 text-[30px] text-headingColor font-medium'>
         Designed for the future</h2>
        {/* container for left side items and image */}
       <div className='flex flex-col-reverse px-6 mx-auto
