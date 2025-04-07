@@ -1,13 +1,7 @@
 import React, { useEffect } from 'react';
 import { illustrationLaptopDesktop, illustrationLaptopMobile } from '../assets';
-import Aos from 'aos';
-import 'aos/dist/aos.css';
 
 const BodyBottom = () => {
-  useEffect(() => {
-    Aos.init({duration: 1500}); //time it takes animation to complete
-  }, []);
-
   return (
     <div className='relative w-full mb-5 bottom-[50px]'>
 
@@ -29,7 +23,7 @@ const BodyBottom = () => {
         </div>
 
         {/* right side items */}
-        <div data-aos="fade-left" className='!mt-5 md:!mt-24 lg:!mt-24 md:w-1/2'>
+        <div className='!mt-5 md:!mt-24 lg:!mt-24 md:w-1/2'>
           <h3 className='md:mt-20 mb-5 text-headingColor font-medium text-[25px] text-center md:text-left'>
             Free, open, simple
           </h3>

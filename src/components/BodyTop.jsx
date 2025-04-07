@@ -1,14 +1,7 @@
 import React, {useEffect } from 'react';
 import { illustrationEditorDesktop, illustrationEditorMobile } from '../assets';
-import Aos from 'aos';
-import 'aos/dist/aos.css';
-
 
 const BodyTop = () => {
-  useEffect(() => {
-    Aos.init({duration: 1500}); //time it takes animation to complete
-  }, []);
-
   return (
     <div className='w-full mb-16'>
       <h2 className='text-center mt-40 md:mt-40 text-[30px] text-headingColor font-medium'>
@@ -17,7 +10,7 @@ const BodyTop = () => {
       <div className='flex flex-col-reverse px-6 mx-auto
       space-y-0 md:flex-row '>
         {/* left side items */}
-        <div data-aos="fade-right" className='mt-10 md:mt-32 mb-32 md:w-1/2'>
+        <div className='mt-10 md:mt-32 mb-32 md:w-1/2'>
           <h3 className='md:mt-20 text-headingColor font-medium text-[25px] text-center md:text-left'>
            Introducing an extensible editor</h3>
           <p className='text-bodyColor text-[15px] font-light mt-2 items-center text-center sm:text-left'>
